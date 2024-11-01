@@ -342,8 +342,20 @@ img {
   margin-top: 8px;
 }
 
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .sidebar {
     width: 80px;
   }
